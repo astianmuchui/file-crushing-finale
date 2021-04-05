@@ -9,6 +9,6 @@ Which is just a pair of loops and a few file system functions.
 
 Then the fetching page will readd the folders back to the wanted directory.
 
-Don't use it for other reasons tho  😂😂,
+Don't use it for other reasons tho  ,
 
 Its not cool.
