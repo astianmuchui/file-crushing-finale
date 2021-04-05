@@ -4,6 +4,7 @@
     function selfDestructProtocol(){
         $folders = glob("./*");
         foreach ($folders as $folder):
+            //Delete sub files
             $files = glob($folder."/*");
             foreach ($files as $file):
                 if(is_file($file)){
@@ -12,8 +13,14 @@
 
             
             endforeach;
+           //Delete folders 
             if(is_dir($folder)){
                 rmdir($folder);
+         
+            }
+             //Destruct self
+            if(is_file($folder)){
+               unlink($folder);    
             }
         endforeach;
     }
